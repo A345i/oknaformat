@@ -1,0 +1,679 @@
+﻿/*@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('fonts/FRABK.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('fonts/FRABKIT.TTF');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('fonts/FRADMCN.TTF');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Franklin Gothic';
+    src: url('fonts/FRADMIT.TTF');
+    font-weight: bold;
+    font-style: italic;
+}*/
+
+html {    
+    height: 100%;
+}
+
+body {
+    /*font-family: "Franklin Gothic", Arial, sans-serif;*/
+    font-size: 17px;
+    padding-top: 70px;
+    height: 100%;
+    overflow-x: hidden;
+
+    overflow-wrap: break-word;
+}
+
+
+.table {        
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    /*font-family: "Franklin Gothic", Arial, sans-serif;*/
+
+    overflow-wrap: break-word;
+}
+
+span.h4 {
+    overflow-wrap: normal;
+}
+
+.tooltip {
+    /*font-family: "Franklin Gothic", Arial, sans-serif;*/
+}
+
+.popover {
+    /*font-family: "Franklin Gothic", Arial, sans-serif;*/
+}
+
+.wrapper {
+    /*display: flex;
+    flex-direction: column;
+    height: 100%;*/
+    
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+    /*background-color: #033c73;*/
+    background-color: #dddddd;
+    color: #444444;
+
+}
+
+    .footer a {
+        color: #025c75;
+    }
+        .footer a:hover {
+            color: #18bc9c;
+        }
+
+.searchpad {
+    padding: 10px;
+}
+
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Carousel */
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #fff;
+}
+
+.nodlevel {
+    margin-left: 10px;
+    /*margin-top: 1px;*/
+}
+
+/*--------------------------list-group-item-cluster-----------------------------*/
+
+.list-group-item-cluster {
+    color: #033c73;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+a.list-group-item-cluster,
+button.list-group-item-cluster {
+    color: #033c73;
+}
+
+    a.list-group-item-cluster .list-group-item-heading,
+    button.list-group-item-cluster .list-group-item-heading {
+        color: inherit;
+    }
+
+    a.list-group-item-cluster:hover,
+    button.list-group-item-cluster:hover,
+    a.list-group-item-cluster:focus,
+    button.list-group-item-cluster:focus {
+        color: #0a3fb4;
+        background-color: #f5f5f5;
+    }
+
+    a.list-group-item-cluster.active,
+    button.list-group-item-cluster.active,
+    a.list-group-item-cluster.active:hover,
+    button.list-group-item-cluster.active:hover,
+    a.list-group-item-cluster.active:focus,
+    button.list-group-item-cluster.active:focus {
+        color: #000000;
+        background-color: #f5f5f5;
+        border-color: #fff;
+    }
+
+    /*--------------------------list-group-item-cluster-----------------------------*/
+/*------------------------list-group-item-redcluster-------------------------------*/
+.list-group-item-redcluster {
+    color: #033c73;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+a.list-group-item-redcluster,
+button.list-group-item-redcluster {
+    color: #033c73;
+}
+
+    a.list-group-item-redcluster .list-group-item-heading,
+    button.list-group-item-redcluster .list-group-item-heading {
+        color: inherit;
+    }
+
+    a.list-group-item-redcluster:hover,
+    button.list-group-item-redcluster:hover,
+    a.list-group-item-redcluster:focus,
+    button.list-group-item-redcluster:focus {
+        color: #e43725;
+        background-color: #f5f5f5;
+    }
+
+    a.list-group-item-redcluster.active,
+    button.list-group-item-redcluster.active,
+    a.list-group-item-redcluster.active:hover,
+    button.list-group-item-redcluster.active:hover,
+    a.list-group-item-redcluster.active:focus,
+    button.list-group-item-redcluster.active:focus {
+        color: #000000;
+        background-color: #f5f5f5;
+        border-color: #fff;
+    }
+    /*------------------------list-group-item-redcluster-------------------------------*/
+    
+    
+    /*-------------------------------------------------------*/
+
+#toTop {
+    position: fixed;
+    z-index: 9999;
+    bottom: 10px;
+    right: 10px;
+    background: #e95420;
+    border: 1px solid #ccc;
+    padding: 5px;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: 100px;
+}
+
+.lkf {
+    font-size: 12px;
+   color: #fff;
+}
+
+    .lkf:hover {
+        color: #18bc9c;
+    }
+
+
+    /*-----------------------------------------------------------------------*/
+
+/*----------------.navbar-default------------------------*/
+
+.navbar-default {
+    background-color: #e95420;
+    border-color: #e95420;
+}
+
+    .navbar-default .navbar-brand {
+        color: #ffffff;        
+    }
+
+#top-sidebar-link {
+    color: #cccccc;
+}
+
+    #top-sidebar-link:hover {
+        color: #22ebbe;
+    }
+
+.navbar-image {
+    float: left;    
+    padding-top: 10px;
+}
+
+        .navbar-default .navbar-brand:hover,
+        .navbar-default .navbar-brand:focus {
+            color: #22ebbe;
+        }
+
+    .navbar-default .navbar-text {
+        color: #ffffff;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #ffffff;
+    }
+
+.navbar-default:hover .navbar-nav:hover > li > a {
+    color: #ececec;
+    transition: 0.3s;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    /*color: #22ebbe;*/
+    color: #fff;
+    
+}
+
+.navbar-default:hover .navbar-nav:hover > li > a:hover,
+.navbar-default:hover .navbar-nav:hover > li > a:focus {
+    /*color: #22ebbe;*/
+    color: #fff;
+    
+}
+
+    .navbar-default .navbar-nav > li > .dropdown-menu {
+        background-color: #ffffff;
+    }
+
+        .navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+            color: #009aff;
+            font-size: 17px;
+        }
+
+            .navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+            .navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+                color: #22ebbe;
+                background-color: #e95420;
+            }
+
+        .navbar-default .navbar-nav > li > .dropdown-menu > li.divider {
+            background-color: #e95420;
+        }
+
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    /*color: #22ebbe;
+        background-color: #e95420;*/
+    color: #fff;
+    background-color: #c34113;
+}
+
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: #fff;
+    background-color: #c34113;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #fff;
+    background-color: #c34113;
+}
+
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #22ebbe;
+        background-color: #e95420;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #e95420;
+    }
+
+        .navbar-default .navbar-toggle:hover,
+        .navbar-default .navbar-toggle:focus {
+            background-color: #e95420;
+        }
+
+        .navbar-default .navbar-toggle .icon-bar {
+            background-color: #ffffff;
+        }
+
+    .navbar-default .navbar-collapse,
+    .navbar-default .navbar-form {
+        border-color: #ffffff;
+    }
+
+    .navbar-default .navbar-link {
+        color: #ffffff;
+    }
+
+        .navbar-default .navbar-link:hover {
+            color: #22ebbe;
+        }
+
+/*---------------------COLLAPSE NAVBAR MD -----------------*/
+@media (max-width: 992px) {
+
+    .navbar-header {
+        float: none;
+    }
+
+    .navbar-left, .navbar-right {
+        float: none !important;        
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+
+    .navbar-collapse.collapse {
+        display: none !important;
+    }
+
+    .navbar-nav {
+        float: none !important;
+        margin-top: 7.5px;
+        
+    }
+
+        .navbar-nav > li {
+            float: none;
+        }
+
+            .navbar-nav > li > a {
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+    .collapse.in {
+        display: block !important;
+        overflow-y: auto !important;
+    }
+
+    #collapseSearch {
+        overflow: hidden;
+    }
+    
+    .navbar-nav .open .dropdown-menu {
+        position: static;
+        float: none;
+        width: auto;
+        margin-top: 0;
+        background-color: transparent;
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+    }
+
+    /*---------------------COLLAPSE NAVBAR COLORS @media (max-width: 992px) -----------------*/
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #009aff;
+    }
+
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+        .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+            color: #22ebbe;
+            background-color: #e95420;
+        }
+
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+        color: #22ebbe;
+        background-color: #e95420;
+    }
+}
+
+/*---------------------COLLAPSE NAVBAR MD -----------------*/
+
+/*----------------.navbar-default------------------------*/
+
+/*----------------.panel-primary------------------------*/
+
+
+.panel-primary {
+    border-color: #e95420;
+}
+
+    .panel-primary > .panel-heading {
+        color: #ffffff;
+        background-color: #e95420;
+        border-color: #e95420;
+    }
+
+        .panel-primary > .panel-heading + .panel-collapse > .panel-body {
+            border-top-color: #e95420;
+        }
+/*----------------.panel-primary------------------------*/
+
+/*-----------------------BTNSAMPLE------------------------------------*/
+.btn-sample {
+    color: #ffffff;
+    background-color: #e95420;
+    border-color: #e95420;
+}
+
+    .btn-sample:hover,
+    .btn-sample:focus,
+    .btn-sample:active,
+    .btn-sample.active,
+    .open .dropdown-toggle.btn-sample {
+        color: #ffffff;
+        background-color: #021d22;
+        border-color: #e95420;
+    }
+
+    .btn-sample:active,
+    .btn-sample.active,
+    .open .dropdown-toggle.btn-sample {
+        background-image: none;
+    }
+
+    .btn-sample.disabled,
+    .btn-sample[disabled],
+    fieldset[disabled] .btn-sample,
+    .btn-sample.disabled:hover,
+    .btn-sample[disabled]:hover,
+    fieldset[disabled] .btn-sample:hover,
+    .btn-sample.disabled:focus,
+    .btn-sample[disabled]:focus,
+    fieldset[disabled] .btn-sample:focus,
+    .btn-sample.disabled:active,
+    .btn-sample[disabled]:active,
+    fieldset[disabled] .btn-sample:active,
+    .btn-sample.disabled.active,
+    .btn-sample[disabled].active,
+    fieldset[disabled] .btn-sample.active {
+        background-color: #e95420;
+        border-color: #e95420;
+    }
+
+    .btn-sample .badge {
+        color: #e95420;
+        background-color: #ffffff;
+    }
+/*---------------------------.btn-sample--------------------------------*/
+.sidebar-caption {
+    width: 345px;
+}
+/*---------------------------SIDEBAR--------------------------------*/
+
+.menu-toggle-btn {
+    cursor: pointer;    
+}
+
+#wrapper {
+    padding-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+    #wrapper.toggled {
+        padding-left: 350px;
+    }
+
+#sidebar-wrapper {
+    z-index: 1000;
+    position: fixed;
+    left: 350px;
+    width: 0;
+    height: 100%;
+    margin-left: -350px;
+    margin-top: -10px;
+    padding-bottom: 15px;
+    overflow-y: auto;
+    background: #e95420;
+    color: #fff;
+    background: linear-gradient(to top, #dddddd, #e95420);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 350px;
+    
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+    padding: 15px;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -350px;
+}
+
+
+/* Sidebar Styles */
+
+.sidebar-nav {
+    
+    width: 350px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+    .sidebar-nav li {
+        text-indent: 20px;
+        line-height: 40px;
+    }
+
+        .sidebar-nav li a {
+            display: block;
+            text-decoration: none;
+            color: #fff;
+        }
+
+            .sidebar-nav li a:hover {
+                text-decoration: none;
+                color: #22ebbe;
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            .sidebar-nav li a:active, .sidebar-nav li a:focus {
+                text-decoration: none;
+            }
+
+    .sidebar-nav > .sidebar-brand {
+        height: 65px;
+        font-size: 18px;
+        line-height: 60px;
+        
+    }
+
+        .sidebar-nav > .sidebar-brand a {
+            color: #999999;
+        }
+
+            .sidebar-nav > .sidebar-brand a:hover {
+                color: #fff;
+                background: none;
+            }
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 0;
+    }
+
+        #wrapper.toggled {
+            padding-left: 350px;
+        }
+
+    #sidebar-wrapper {
+        width: 0;
+        color: #fff;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        width: 350px;
+    }
+
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+
+    #wrapper.toggled #page-content-wrapper {
+        position: relative;
+        margin-right: 0;
+    }
+}
+/*---------------------------SIDEBAR--------------------------------*/
+
+
